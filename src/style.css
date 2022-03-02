@@ -1,0 +1,146 @@
+body {
+  height: 100%;
+  width: 65%;
+  display: block;
+  margin: 0 auto;
+  background-color: #c6caff7e;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 45px;
+}
+
+p {
+  margin: 5px auto;
+  font-size: 25px;
+}
+
+input {
+  border-radius: 5px;
+  background-color: #c6caff7e;
+}
+
+i {
+  display: block;
+  margin: 0 auto;
+  color: rgb(25, 0, 255);
+  font-size: 200%;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.searchBar i {
+  font-size: 18px;
+  color: rgb(117, 117, 117);
+}
+
+.todayRightColumn {
+  position: relative;
+  top: 10px;
+  font-size: 40px;
+}
+
+.weatherToday .column {
+  width: 50%;
+}
+
+#celsius {
+  padding: 0 5px;
+  margin: -5px;
+}
+
+.weatherToday #celsius:hover {
+  cursor: pointer;
+  background-color: #b3bafdd5;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+#fahrenheit {
+  padding: 0 3px;
+  padding: 0 5px;
+}
+
+.weatherToday #fahrenheit:hover {
+  cursor: pointer;
+  background-color: #b3bafdd5;
+  border-radius: 5px;
+}
+
+.weather .column {
+  display: block;
+  width: 33%;
+  text-align: center;
+  border: 1px solid #008afc;
+  border-radius: 10px;
+  margin: 5px auto;
+  padding: 10px;
+}
+
+.weather .column:hover {
+  border: 1px solid #d4d7ff;
+  border-radius: 10px;
+  background-color: #008bfc48;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn {
+  border: none;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.searchBar {
+  padding: 1px;
+  text-align: center;
+  margin: 10 auto 0;
+}
+
+.typeyour {
+  border: none;
+}
+
+.row {
+  border: 1px solid #008afc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #d4d7ff;
+}
+
+.degrees {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 6px;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.weather .degrees {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 4px;
+}
+
+.weather p {
+  font-weight: bold;
+}
