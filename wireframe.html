@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather forecast</title>
 
     <link
@@ -28,7 +29,7 @@
           id="search-bar"
           placeholder="Type your city"
         />
-        <button type="button" class="btn btn-outline-secondary">
+        <button type="button" class="btn btn-outline-secondary" id="location">
           <i class="fa-solid fa-location-crosshairs"></i>
         </button>
         <button
@@ -54,8 +55,11 @@
           <h2>
             <span id="degrees">9</span>
             <span class="degrees">
-              <a href="#" id="celsius-link">°C</a>
-              |<a href="#" id="fahrenheit-link">°F</a>
+              <a href="#" id="celsius-link">°C</a>|<a
+                href="#"
+                id="fahrenheit-link"
+                >°F</a
+              >
             </span>
           </h2>
         </div>

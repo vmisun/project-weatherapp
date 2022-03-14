@@ -53,24 +53,22 @@ i {
   width: 50%;
 }
 
-#celsius {
+#celsius-link {
   padding: 0 5px;
-  margin: -5px;
+  margin: 0;
 }
 
-.weatherToday #celsius:hover {
+.weatherToday #celsius-link:hover {
   cursor: pointer;
   background-color: #b3bafdd5;
   border-radius: 5px;
+}
+
+#fahrenheit-link {
   padding: 0 5px;
 }
 
-#fahrenheit {
-  padding: 0 3px;
-  padding: 0 5px;
-}
-
-.weatherToday #fahrenheit:hover {
+.weatherToday #fahrenheit-link:hover {
   cursor: pointer;
   background-color: #b3bafdd5;
   border-radius: 5px;
