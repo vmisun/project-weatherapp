@@ -38,6 +38,18 @@ i {
   width: 100%;
 }
 
+footer {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .searchBar i {
   font-size: 18px;
   color: rgb(117, 117, 117);
