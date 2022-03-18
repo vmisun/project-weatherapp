@@ -95,3 +95,13 @@ let locationButton = document.querySelector("#location");
 locationButton.addEventListener("click", getCurrentLocation);
 
 searchCityName("London");
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let currentTemperature = document.querySelector("#degrees");
+  currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
