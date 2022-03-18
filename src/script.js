@@ -93,3 +93,5 @@ function getCurrentLocation() {
 
 let locationButton = document.querySelector("#location");
 locationButton.addEventListener("click", getCurrentLocation);
+
+searchCityName("London");
