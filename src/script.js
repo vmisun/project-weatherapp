@@ -92,12 +92,18 @@ function displayFahrenheitTemperature(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let currentTemperature = document.querySelector("#degrees");
   currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
 }
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   let currentTemperature = document.querySelector("#degrees");
   currentTemperature.innerHTML = Math.round(celsiusTemperature);
+
+  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active");
 }
 
 let celsiusTemperature = null;

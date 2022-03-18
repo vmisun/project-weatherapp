@@ -88,10 +88,23 @@ a:hover {
   margin: 0;
 }
 
+.weatherToday .active {
+  cursor: default;
+  color: #000;
+  text-decoration: none;
+}
+
+.todayRightColumn a {
+  cursor: default;
+  color: rgb(117, 117, 117);
+  text-decoration: none;
+}
+
 .weatherToday #celsius-link:hover {
-  cursor: pointer;
+  cursor: default;
   background-color: #b3bafdd5;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 #fahrenheit-link {
@@ -99,9 +112,10 @@ a:hover {
 }
 
 .weatherToday #fahrenheit-link:hover {
-  cursor: pointer;
+  cursor: default;
   background-color: #b3bafdd5;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .weather .column {
