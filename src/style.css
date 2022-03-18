@@ -58,7 +58,7 @@ a:hover {
   font-size: 25px;
 }
 
-.column #description {
+#description:first-letter {
   text-transform: capitalize;
 }
 

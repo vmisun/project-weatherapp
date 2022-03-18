@@ -1,4 +1,16 @@
 function showDate(now) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let hour = date.getHours();
+  if (hour < 10) {
+    hour = `0${hour}`;
+  }
+  let minutes = date.getMinutes();
+  let seconds = date.getSeconds();
+  if (seconds < 10) {
+    seconds = `0${seconds}`;
+  }
+
   let days = [
     "Sunday",
     "Monday",
@@ -8,62 +20,21 @@ function showDate(now) {
     "Friday",
     "Saturday",
   ];
+  let day = days[date.getDay()];
 
-  let day = days[now.getDay()];
-
-  let months = [
-    "01",
-    "02",
-    "03",
-    "04",
-    "05",
-    "06",
-    "07",
-    "08",
-    "09",
-    "10",
-    "11",
-    "12",
-  ];
-
-  let month = months[now.getMonth()];
-  let year = now.getFullYear();
-  let date = now.getDate();
-  if (date < 10) {
-    date = `0${date}`;
-  }
-
-  let currentDate = document.querySelector("#date");
-  currentDate.innerHTML = `${day}, ${date}.${month}.${year}`;
+  return `${day} ${hour}:${minutes}:${seconds}`;
 }
-
-function showTime(now) {
-  let hour = now.getHours();
-  if (hour < 10) {
-    hour = `0${hour}`;
-  }
-  let minutes = now.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  let seconds = now.getSeconds();
-
-  let currentTime = document.querySelector("#time");
-  currentTime.innerHTML = `${hour}:${minutes}:${seconds}`;
-}
-
-let now = new Date();
-showDate(now);
-showTime(now);
 
 function showTemperature(response) {
-  console.log(response.data.wind);
   let temperature = Math.round(response.data.main.temp);
   let teperatureElement = document.querySelector("#degrees");
   teperatureElement.innerHTML = `${temperature}`;
 
   let cityDisplay = document.querySelector("h1");
   cityDisplay.innerHTML = response.data.name;
+
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
