@@ -57,12 +57,19 @@ showDate(now);
 showTime(now);
 
 function showTemperature(response) {
+  console.log(response.data.wind);
   let temperature = Math.round(response.data.main.temp);
   let teperatureElement = document.querySelector("#degrees");
   teperatureElement.innerHTML = `${temperature}`;
 
   let cityDisplay = document.querySelector("h1");
   cityDisplay.innerHTML = response.data.name;
+
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 function searchCityName(cityName) {
