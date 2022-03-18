@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  width: 65%;
+  width: 50%;
   display: block;
   margin: 0 auto;
   background-color: #c6caff7e;
@@ -36,10 +36,8 @@ i {
 img {
   display: block;
   margin: 0 auto;
-  color: rgb(25, 0, 255);
-  padding: 10px;
   text-align: center;
-  width: 100%;
+  width: 70px;
   padding-right: 0;
 }
 
@@ -66,6 +64,10 @@ a:hover {
   padding: 0;
   margin: 5px auto;
   font-size: 25px;
+}
+
+#description {
+  font-weight: bold;
 }
 
 #description:first-letter {
