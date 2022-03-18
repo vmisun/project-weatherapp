@@ -1,4 +1,3 @@
-function showDate(now) {
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hour = date.getHours();
