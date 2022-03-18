@@ -33,6 +33,16 @@ i {
   width: 100%;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  color: rgb(25, 0, 255);
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  padding-right: 0;
+}
+
 footer {
   padding: 10px;
 }
@@ -67,10 +77,6 @@ a:hover {
   top: 10px;
   font-size: 40px;
   padding: 0 0 15px 0;
-}
-
-.todayRightColumn i {
-  padding-right: 0;
 }
 
 .weatherToday .column {
