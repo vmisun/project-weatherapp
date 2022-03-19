@@ -23,21 +23,18 @@ input {
   background-color: #c6caff7e;
 }
 
-i {
+.weather-forecast img {
   display: block;
   margin: 0 auto;
-  color: rgb(25, 0, 255);
-  font-size: 150%;
   padding: 10px;
-  text-align: center;
-  width: 100%;
+  width: 60%;
 }
 
-img {
+.icon {
   display: block;
   margin: 0 auto;
   text-align: center;
-  width: 70px;
+  width: 60px;
   padding-right: 0;
 }
 
