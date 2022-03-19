@@ -114,4 +114,34 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-4 column">
+    <img
+      src="http://openweathermap.org/img/wn/01n@2x.png"
+      alt="Clear Sky"
+      class="icon"
+    />
+    <h3>${day}</h3>
+    <p>
+      7<span class="degrees">°C</span>
+    </p>
+  </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 searchCityName("London");
+displayForecast();
