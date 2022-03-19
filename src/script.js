@@ -124,7 +124,7 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `
-  <div class="col-4 column">
+  <div class="col-2 column">
     <img
       src="http://openweathermap.org/img/wn/01n@2x.png"
       alt="Clear Sky"
