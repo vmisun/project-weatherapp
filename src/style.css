@@ -119,7 +119,6 @@ a:hover {
 
 .weather .column {
   display: block;
-  width: 33%;
   text-align: center;
   border: 1px solid #008afc;
   border-radius: 10px;
