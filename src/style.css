@@ -87,12 +87,6 @@ a:hover {
   margin: 0;
 }
 
-.weatherToday .active {
-  cursor: default;
-  color: #000;
-  text-decoration: none;
-}
-
 .todayRightColumn a {
   cursor: default;
   color: rgb(117, 117, 117);

@@ -97,33 +97,6 @@ function getCurrentLocation() {
 let locationButton = document.querySelector("#location");
 locationButton.addEventListener("click", getCurrentLocation);
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  let currentTemperature = document.querySelector("#degrees");
-  currentTemperature.innerHTML = Math.round(fahrenheitTemperature);
-
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  let currentTemperature = document.querySelector("#degrees");
-  currentTemperature.innerHTML = Math.round(celsiusTemperature);
-
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-}
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
