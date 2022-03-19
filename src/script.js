@@ -117,7 +117,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-  <div class="col-4 column">
+  <div class="col-sm-6 col-md-4 col-lg-2 column">
     <img
       src="http://openweathermap.org/img/wn/${
         forecastDay.weather[0].icon
