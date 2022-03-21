@@ -5,6 +5,9 @@ function formatDate(timestamp) {
     hour = `0${hour}`;
   }
   let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let seconds = date.getSeconds();
   if (seconds < 10) {
     seconds = `0${seconds}`;
